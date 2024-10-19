@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="Login.css">
+  
+   <!-- Favicon -->
+   <link href="img/favicon.ico" rel="icon">
+
+   <!-- Google Font -->
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+       rel="stylesheet">
+
+   <!-- CSS Libraries -->
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+   <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+   <link href="lib/animate/animate.min.css" rel="stylesheet">
+   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+   <!-- Owl Carousel CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <link rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+   <!-- jQuery (required by Owl Carousel) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   <!-- Owl Carousel JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+  <title>Kindness Network - Login</title>
+</head>
+<body>
+  <div class="bg-img">
+    <div class="content">
+      <header>Login Form</header>
+      <form action="#" method="post">
+        <div class="field">
+          <span class="fa fa-user"></span>
+          <input type="text" required placeholder="Email or Phone no.">
+        </div>
+        <div class="field space">
+          <span class="fa fa-lock"></span>
+          <input type="password" class="password" required placeholder="Password">
+          <span class="fa fa-eye"></span>
+        </div>
+        <div class="pass">
+          <a href="#">Forgot Password</a>
+        </div>
+        <div class="field ">
+          <input type="submit" value="LOGIN">
+        </div>
+        <div class="login">Or login with</div>
+        <div class="link">
+          <div class="Facebook">
+            <i class="fab fa-facebook-f"><span>Facebook</span></i>
+          </div>
+          <div class="Google">
+            <i class="fab fa-google"><span>Google</span></i>
+          </div>
+        </div>
+        <div class="signup">Don't have account
+          <a href="Signup.html">Signup Now</a>
+        </div>
+      </form>
+    </div>
+  </div>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const pass_field=document.querySelector('.password')
+    const show_btn=document.querySelector('.show')
+    show_btn.addEventListener('click', function(){
+      if(pass_field.type === "password"){
+        pass_field.type ="text";
+        show_btn.style.color ="#3498DB";
+        show_btn.textContent ="HIDE";
+      }
+      else{
+        pass_field.type ="password";
+        show_btn.style.color ="#222";
+        show_btn.textContent ="SHOW";
+      }
+    });
+  </script>
+</body>
+</html>
